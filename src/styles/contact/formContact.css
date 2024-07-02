@@ -1,0 +1,102 @@
+.form-contact__wrapper {
+  padding: 20px;
+  width: 100%;
+}
+.form-contact__title-form-container {
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.form-contact__title-form-container p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.form-contact__title-form-container span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.form-contact__form-container {
+  background-color: var(--color-white);
+  height: 100%;
+  margin-left: -20px;
+  padding: 40px 20px;
+  width: calc(100% + 40px);
+}
+.form-contact__form-description {
+  color: var(--color-black);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  margin: 0 auto 30px auto;
+  max-width: 500px;
+}
+.form-contact__form {
+  margin: 0 auto;
+  max-width: 500px;
+}
+.form-contact__container-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-contact__option {
+  display: flex;
+  justify-content: space-between;
+}
+.form-contact__option p {
+  color: var(--color-black);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  text-wrap: balance;
+}
+
+@media screen and (min-width: 768px) {
+  .form-contact__wrapper {
+    padding: 20px 40px;
+    width: 100%;
+  }
+  .form-contact__title-form-container {
+    margin-bottom: 50px;
+  }
+  .form-contact__title-form-container p {
+    font-size: 40px;
+  }
+  .form-contact__title-form-container span {
+    font-size: 20px;
+  }
+  .form-contact__form-container {
+    margin-left: -40px;
+    padding: 40px 20px;
+    width: calc(100% + 80px);
+  }
+  .form-contact__form-description {
+    font-size: 18px;  
+  }
+  .form-contact__form-container{
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form-contact__wrapper {
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 800px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .form-contact__wrapper {
+    width: 1000px;
+  }
+  .form-contact__title-form-container p {
+    font-size: 48px;
+  }
+  .form-contact__title-form-container span {
+    font-size: 22px;
+  }
+}

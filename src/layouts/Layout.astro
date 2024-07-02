@@ -1,0 +1,38 @@
+---
+import '@/styles/global.css';
+import { AppConfig } from '@/helpers/AppConfig';
+import Header from '@/components/header/header';
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props as Props;
+---
+
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name='author' content={AppConfig.author} />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="title" content="Affordable Automatic Gate" />
+    <meta name="description" content="Affordable Automatic Gate" />
+		<link rel="alternate" type="application/rss+xml"  href="/rss.xml" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="sitemap" href="/sitemap-index.xml" />
+	</head>
+	<body>
+		<header>
+			<Header client:only="react" />
+		</header>
+		<main>
+			<slot />
+		</main>
+		<div id="modal-root"></div>
+	</body>
+</html>

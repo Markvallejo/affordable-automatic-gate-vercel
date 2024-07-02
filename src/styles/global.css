@@ -1,0 +1,103 @@
+
+@font-face {
+  font-display: swap;
+  font-family: 'KantumruyPro';
+  src: url('/fonts/KantumruyPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'KantumruyPro';
+  src: url('/fonts/KantumruyPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+  
+@font-face {
+  font-display: swap;
+  font-family: 'KantumruyPro';
+  src: url('/fonts/KantumruyPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+  
+:root {
+  --color-white: #FFFFFF;
+  --color-beige: #eeede9;
+  --color-black: #000000;
+  --color-coffee: #af9987;
+  --steel-blue: #5794b5;
+  --color-green: #77af77;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+}
+body {
+  color: var(--color-black);
+  font-family: 'KantumruyPro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.body-hidden {
+  overflow: hidden;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+ul {
+  margin: 0 0 0 1em;
+  padding: 0;
+}
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+svg {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+div,
+section,
+article {
+  box-sizing: border-box;
+}
+button, [type='button'], [type='reset'], [type='submit'] {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0px;
+}
+
+/* Dummy CSS to delete */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.25rem;
+}
+  
